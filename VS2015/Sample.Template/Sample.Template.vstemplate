@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Sample</Name>
+    <Description>Answer a forum question or solve a programming exercise</Description>
+    <Icon>Sample.Template.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>6c19aa44-56cc-425a-be5a-8653ee7dd1f1</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Sample</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Sample.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Tests.cs</ProjectItem>
+      <ProjectItem>packages.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
